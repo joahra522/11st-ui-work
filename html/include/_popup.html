@@ -1,0 +1,15 @@
+@@if(false) {
+<!--
+	"title" : 팝업타이틀
+    "text" : 팝업내용
+-->}
+
+<!-- [D] a11y : data-popup값에 팝업 button과 매칭되는 값을 넣어주세요. -->
+<div class="popup" role=dialog data-popup="popup1">
+    <div class="popup_content">
+        <!-- [D] a11y : tabindex 추가 -->
+        <h1 class="popup_title" tabindex="0">@@title</h1>
+        <p class="popup_text">@@text</p>
+        <button type="button" class="btn_close" aria-label="닫기"></button>
+    </div>
+</div>

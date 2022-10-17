@@ -1,0 +1,64 @@
+.btn {
+    &_details {
+        width: 14px;
+        height: 14px;
+        background: $point;
+        vertical-align: top;
+        @include border-radius(50%);
+    }//.btn_details
+    &_default {
+        padding: 10px 15px;
+        border: 1px solid #969696;
+
+        &.on {
+            border-color: $point;
+            color: $point;
+        }
+    }//.btn_default
+    &_share,
+    &_call {
+        @include position(absolute, null, 10px);
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        z-index: 5;
+        @include border-radius(50%);
+    }//.btn_share, //.btn_call
+    &_share {
+        top: 70px;
+    }//.btn_share
+    &_call {
+        top: 115px;
+    }//.btn_call
+    &_option {
+        padding: 15px 10px;
+        min-width: 100px;
+        border: 1px solid $color3;
+        text-align: center;
+        @include box;
+        &.on {
+            border-color: $point;
+            color: $point;
+            font-weight: bold;
+        }
+    }//.btn_option
+    &_close {
+        @include position(absolute, 15px, 15px);
+        width: 16px;
+        height: 16px;
+        &::before,
+        &::after {
+            @include position(absolute, 0, 50%);
+            content: ' ';
+            height: 17px;
+            width: 2px;
+            background-color: $color;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}

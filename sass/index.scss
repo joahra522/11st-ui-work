@@ -1,0 +1,13 @@
+//base
+@import 'common/reset';
+@import 'common/mixin';
+@import 'common/variable';
+@import 'common/common';
+
+//component
+@import 'component/header';
+@import 'component/popup';
+@import 'component/_btn';
+
+//page style
+@import 'include/styles';

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11번가</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- header -->
+<header id="header" class="header">
+    <div class="header_bar">
+        <h1 class="header_logo">
+            <a href="#">
+                <img src="#" alt="십일번가">
+            </a>
+        </h1>
+        <a href="#" class="header_title" >
+            <img src="#" alt="휴대폰샵">
+        </a>
+        <button type="button" class="header_menu" aria-pressed="" aria-label="메뉴">
+            <i class="header_menu_icon"></i>
+        </button>
+        <div class="header_link">
+            <a href="#" class="search" aria-label="검색"></a>
+            <a href="#" class="cart" aria-label="장바구니"></a>
+        </div>
+    </div>
+</header>
+<!--// header -->
+
+    <main id="container" class="container">
+        <!-- 상품 상세 -->
+        <article class="product_details">
+            <h2 class="blind">상품상세</h2>
+            <!-- 슬라이드 영역 -->
+            <section class="product_thumb">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!--// 슬라이드 영역 -->
+
+            <!-- 상품 정보 -->
+            <section class="product_info">
+                <!-- 상품명/가격 -->
+                <div class="product_info_top">
+                    <span class="product_info_sub">모든 순간을 나답게</span>
+                    <h3 class="product_info_name">삼성전자 갤럭시 S9 플러스</h3>
+                    <div class="product_info_price">
+                        <span class="percent point">
+                            <em class="blind">할인율</em>
+                            <strong>2</strong>%
+                        </span>
+                        <strong class="price">
+                            <em class="blind">할인가</em>
+                            941,500원
+                        </strong>
+                        <del class="price_origin">
+                            <em class="blind">할인전 가격</em>
+                            957,000원
+                        </del>
+                    </div>
+                </div>
+                <!--// 상품명/가격 -->
+                <!-- 배송/혜택 -->
+                <div class="product_info_bottom">
+                    <h3 class="blind">배송/혜택</h3>
+                    <ul class="product_info_list">
+                        <li>
+                            <strong class="point">T멥버십 할인가 870,440원</strong>
+                        </li>
+                        <li>T멤버십 할인, OK캐시백할인, 카드할인</li>
+                        <li>
+                            무료배송, 오늘도착, 찾아가는개통, 바로픽업
+                            <button type="button" class="btn_details" aria-label="자세히 보기"></button>
+                        </li>
+                    </ul>
+                    <a href="#" class="product_info_link">배송/혜택 더보기</a>
+                </div>
+                <!--// 배송/혜택 -->
+                <span class="product_info_notice">
+                    <strong class="notice_text">16시 이전 주문 완료시, 당일 출고(평일기준)</strong>
+                </span>
+            </section>
+            <!--// 상품 정보 -->
+            
+            <!-- 배너 -->
+            <section class="product_banner">
+                <h3 class="blind">광고배너</h3>
+                <a href="#">
+                    <img src="#" alt="11번가 휴대폰샵 전용(최대 20만원 할인) 쿠폰받기">
+                </a>
+            </section>
+            <!--// 배너 -->
+            
+            <!-- 상품옵션 -->
+            <section class="product_option">
+                <h3 class="product_option_title">색상 및 용량</h3>
+                <ul class="product_option_choice">
+                   <li>
+                       <!-- [D] 활성화시 on 클래스 추가 -->
+                       <button type="button" class="btn_option on">64G</button>
+                   </li>
+                   <li>
+                       <button type="button" class="btn_option">256G</button>
+                   </li>
+                </ul>
+                <a href="#" class="product_option_link">구매 가이드 동영상</a>
+            </section>
+            <!--// 상품옵션 -->
+            <button type="button" class="btn_share" aria-label="공유하기"></button>
+            <button type="button" class="btn_call" aria-label="문의하기"></button>
+        </article>
+        <!--// 상품 상세 -->
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        autoplay: {
+            delay: 2500,
+        },
+        loof : true
+      });
+    </script>
+</body>
+</html>

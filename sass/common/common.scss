@@ -1,0 +1,23 @@
+
+@import 'variable';
+body,
+html {
+    font-size: 13px;
+    color: #111;
+}
+.blind {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(1px 1px 1px 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+}
+.point {
+    color: $point;
+}
+.point2 {
+    color: $point2;
+}
